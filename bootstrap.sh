@@ -2,21 +2,6 @@
 
 DOTFILES_ROOT=$HOME/.dotfiles
 
-echo "Do you want to install or update?"
-select ANSWER in "Install" "Update"; do
-    case $ANSWER in
-        Install ) 
-			install
-        	break;;
-        Update )  
-			update
-			break;;
-		* ) 
-			echo "Dunno this command..."
-			break;;
-    esac
-done
-
 function install() {
 	# Sync with Github repo
 	git fetch origin
@@ -65,8 +50,11 @@ function install() {
 }
 
 function update() {
+	# Check for updates in App Store
+	softwareupdate -l
+
 	# Update App Store apps
-	sudo softwareupdate -iva
+	# sudo softwareupdate -iva
 
 	# Update Homebrew (Cask) & packages
 	brew update
@@ -78,3 +66,18 @@ function update() {
 	gem update
 	gem cleanup
 }
+
+echo "Do you want to install or update?"
+select ANSWER in "Install" "Update"; do
+    case $ANSWER in
+        Install ) 
+			install
+        	break;;
+        Update )  
+			update
+			break;;
+		* ) 
+			echo "Dunno this command..."
+			break;;
+    esac
+done
