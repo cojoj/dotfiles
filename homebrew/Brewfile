@@ -1,0 +1,15 @@
+brew "caskroom/cask/brew-cask"
+brew "git"
+brew "node"
+brew "openssl"
+brew "ruby"
+brew "xctool"
+brew "the_silver_searcher"
+brew "tree"
+brew "wget"
+brew "zsh"
+brew "zsh-completions"
+
+# Add caskroom repo
+tap 'caskroom/cask'
+tap 'caskroom/versions'
