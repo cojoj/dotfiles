@@ -113,6 +113,65 @@ List of installed packages (_might be outdated_):
 Theme is set to [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Menlo 12pt**.
 
 ## Xcode configuration
+
+First of all install [Alcatraz](http://alcatraz.io) using:
+```
+curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+```
+
+Here's the list of **Xcode plugins** which you use:
+
+- AdjustFontSize
+- Alcatraz
+- Auto-Importer
+- Backlight
+- ClangFormat
+- DBSmartPanels
+- DerivedData Exterminator
+- FuzzyAutocomplete
+- GitDiff
+- HOStringSense
+- IntelliPaste Tes
+- IntelliPaste
+- KSImageNamed
+- MarvinPlugin
+- NCSimulatorPlugin
+- OMColorSense
+- OMQuickHelp
+- OpenInTerminal
+- QuickLocalization
+- RealmPlugin
+- SCXcodeSwitchExpander
+- UncrustifyPlugin
+- VVDocumenter-Xcode
+- XCActionBar
+- XLCXcodeAssist
+- XcodeBoost
+- XcodeWay
+- Xcode_beginning_of_line
+- Xcode_copy_line
+
+If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02)
+
+Beside installing plugins you'll have to install defult **theme** and set some **properties** manually. Follow the steps listed below:
+
+- **Fonts and Colors**:
+    + `Tomorrow Night` theme can be installed via **Alcatraz**
+- **Text Editing**:
+    + Show **Line Numbers**
+    + Page guide at column
+
+Now let's move to configuring **Plugins**:
+
+- **Backlight**:
+    + line backlight (overlay)
+    + Always backlight
+    + Enable stroke
+    + Enable round corners
+    + Backlight color 5% opacity
+- **Show colors under carret**
+- **Enable string popover**
+
 ## Dock
 
 Please see the screenshot below for the default **Dock** icons positioning. Feel free to do it whatever you like your icons grouped.
@@ -121,3 +180,7 @@ For **Documents** and **Downloads** directories in Dock I've set this options:
 - Sort by **add date**
 - Show as **directory**
 - Show content **automaticaly**
+
+## Third-party software and App Store
+
+Other tools which cannot be istalled using  **Homebrew Cask** need to be installed manually. Most of them via App Store.
