@@ -2,11 +2,13 @@
 
 GIT_DIRECTORY=$HOME/.dotfiles/git
 SSH_DIRECTORY=$HOME/.ssh
-USER="Mateusz Zając"
-EMAIL="zajac.mateusz@icloud.com"
 
 # Config global git user
+echo "Please, enter your git username: "
+read -e USER
 git config --global user.name $USER
+echo "Please, enter your git user email address: "
+read -e EMAIL
 git config --global user.email $EMAIL
 
 # Credentials helper
