@@ -42,9 +42,12 @@ function install() {
 	# Change shell to ZSH
 	chsh -s /bin/zsh
 
-	# Link .zshrc files
-	ln -sfhv $DOTFILES_ROOT/zsh/.zshrc ~
+	# Link .zshrc file
+	ln -sfhv $DOTFILES_ROOT/zsh/.zshrc $HOME
 	source $HOME/.zshrc
+
+	# Link .gemrc file
+	ln -sfhv $DOTFILES_ROOT/ruby/.gemrc $HOME
 
 	# Install casks
 	cd homebrew/
