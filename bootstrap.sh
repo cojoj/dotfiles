@@ -2,21 +2,6 @@
 
 DOTFILES_ROOT=$HOME/.dotfiles
 
-echo "Do you want to install or update?"
-select ANSWER in "Install" "Update"; do
-    case $ANSWER in
-        Install ) 
-			install
-        	break;;
-        Update )  
-			update
-			break;;
-		* ) 
-			echo "Dunno this command..."
-			break;;
-    esac
-done
-
 function install() {
 	# Sync with Github repo
 	git fetch origin
@@ -78,3 +63,18 @@ function update() {
 	gem update
 	gem cleanup
 }
+
+echo "Do you want to install or update?"
+select ANSWER in "Install" "Update"; do
+    case $ANSWER in
+        Install ) 
+			install
+        	break;;
+        Update )  
+			update
+			break;;
+		* ) 
+			echo "Dunno this command..."
+			break;;
+    esac
+done
