@@ -28,4 +28,7 @@ export PATH="/usr/local/opt/ruby/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bi
 # Set default location for homebrew-cask apps
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Set Sublime Text as defulat editor for ZSH
+export EDITOR='subl'
+
 source $ZSH/oh-my-zsh.sh

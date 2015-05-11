@@ -4,11 +4,11 @@ GIT_DIRECTORY=$HOME/.dotfiles/git
 SSH_DIRECTORY=$HOME/.ssh
 
 # Config global git user
-echo -e "Please, enter your git username: "
-read USER
+echo "Please, enter your git username: "
+read -e USER
 git config --global user.name $USER
-echo -e "Please, enter your git user email address: "
-read EMAIL
+echo "Please, enter your git user email address: "
+read -e EMAIL
 git config --global user.email $EMAIL
 
 # Credentials helper
