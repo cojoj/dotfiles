@@ -1,0 +1,46 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
+	"font_size": 12,
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"translate_tabs_to_spaces": false,
+	"hot_exit": false,
+	"word_wrap": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": false,
+	"caret_style": "phase",
+	"save_on_focus_lost": false,
+	"auto_complete_delay": 5,
+	"auto_complete_selector": "source, text",
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"open_files_in_new_window": false,
+    "rulers":
+    [
+        80
+    ],
+    "folder_exclude_patterns": 
+    [
+        ".svn",
+        ".git",
+        ".DS_Store",
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb"
+    ]
+}
