@@ -51,6 +51,9 @@ function install() {
 	brew bundle --file=Caskfile
 	cd $DOTFILES_ROOT
 
+	# Configure Sublime Text
+	source $DOTFILES_ROOT/sublime/sublime.sh
+
 	#Configure git
 	source $DOTFILES_ROOT/git/git.sh
 
