@@ -23,7 +23,7 @@ plugins=(git z brew brew-cask bundler compleat forklift gem git-extras github os
 
 # User configuration
 
-export PATH="/usr/local/opt/ruby/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/opt/ruby/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Set default location for homebrew-cask apps
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
