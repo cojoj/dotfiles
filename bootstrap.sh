@@ -59,6 +59,8 @@ function update() {
 	# Update Homebrew (Cask) & packages
 	brew update
 	brew upgrade --all
+	brew cleanup
+	brew cask cleanup
 	brew cleanup --force -s && rm -rf $(brew --cache)
 
 	# Update Ruby & gems
