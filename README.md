@@ -180,6 +180,11 @@ Now let's move to configuring **Plugins**:
 - **Show colors under carret**
 - **Enable string popover**
 
+You're almost ready... One last thing - **code snippets**. There're two reasonable repos offering nice set of snippets:
+
+1. [Mattt's Objective-C snippets](https://github.com/Xcode-Snippets/Objective-C)
+2. [Swift snippets from Kamil Burczyk](https://github.com/burczyk/XcodeSwiftSnippets)
+
 ## Dock
 
 Please see the screenshot below for the default **Dock** icons positioning. Feel free to do it whatever you like your icons grouped.
