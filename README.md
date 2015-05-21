@@ -130,34 +130,34 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 
 Here's the list of **Xcode plugins** which you use:
 
-- AdjustFontSize.xcplugin
-- Alcatraz.xcplugin
-- Auto-Importer.xcplugin
-- Backlight.xcplugin
-- ClangFormat.xcplugin
-- DBSmartPanels.xcplugin
-- DerivedData Exterminator.xcplugin
-- FuzzyAutocomplete.xcplugin
-- GitDiff.xcplugin
-- HOStringSense.xcplugin
-- IntelliPaste.xcplugin
-- KSImageNamed.xcplugin
-- MarvinPlugin.xcplugin
-- NCSimulatorPlugin.xcplugin
-- OMColorSense.xcplugin
-- OMQuickHelp.xcplugin
-- Open With Application.xcplugin
-- PrettyPrintJSON.xcplugin
-- QuickLocalization.xcplugin
-- RealmPlugin.xcplugin
-- SuggestedColors.xcplugin
-- Tuna.xcplugin
-- VVDocumenter-Xcode.xcplugin
-- XCActionBar.xcplugin
-- XcodeBoost.xcplugin
-- XcodeColors.xcplugin
-- XcodeWay.xcplugin
-- Xcode_beginning_of_line.xcplugin
+- AdjustFontSize
+- Alcatraz
+- Auto-Importer
+- Backlight
+- ClangFormat
+- DBSmartPanels
+- DerivedData Exterminator
+- FuzzyAutocomplete
+- GitDiff
+- HOStringSense
+- IntelliPaste
+- KSImageNamed
+- MarvinPlugin
+- NCSimulatorPlugin
+- OMColorSense
+- OMQuickHelp
+- Open With Application
+- PrettyPrintJSON
+- QuickLocalization
+- RealmPlugin
+- SuggestedColors
+- Tuna
+- VVDocumenter-Xcode
+- XCActionBar
+- XcodeBoost
+- XcodeColors
+- XcodeWay
+- Xcode_beginning_of_line
 
 If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02)
 
@@ -184,6 +184,11 @@ You're almost ready... One last thing - **code snippets**. There're two reasonab
 
 1. [Mattt's Objective-C snippets](https://github.com/Xcode-Snippets/Objective-C)
 2. [Swift snippets from Kamil Burczyk](https://github.com/burczyk/XcodeSwiftSnippets)
+
+I've copied those repos and put them under `xcode/snippets`. To use all of those just call:
+```
+cp ~/.dotfiles/xcode/snippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/
+```
 
 ## Dock
 
