@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
 	<string>pds</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Class Implementation</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - UIPickerDataSource
-	
-	- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-	  return &lt;#number#&gt;
-	}
-	
-	- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-	  return &lt;#number#&gt;
-	}</string>
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return &lt;#number#&gt;
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return &lt;#number#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>22121A48-818F-493A-80AE-F9C78B8F8D19</string>
+	<string>1228D21E-9A5C-445B-8B9A-A89D01ADCE98</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>Placeholders for required UIPickerView datasource methods</string>
 	<key>IDECodeSnippetTitle</key>

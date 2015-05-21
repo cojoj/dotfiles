@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>frame</string>
+	<string>weakself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Function or Method</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;# view #&gt;.frame = ({
-	    CGRect frame = &lt;# view #&gt;.frame;
-	    &lt;# ... #&gt;
-	    frame;
-	});</string>
+	<string>__weak typeof(self)weakSelf = self;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>99E557A7-534B-4F3D-80CD-82E41C205381</string>
+	<string>D78F5416-DD45-4DC5-B193-CCB71EADA307</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Initializes a view frame inside a code block</string>
+	<string>Declare weak reference to self</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Set Frame</string>
+	<string>__weak self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

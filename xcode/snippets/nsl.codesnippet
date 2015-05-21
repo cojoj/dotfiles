@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>init</string>
+	<string>nsl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Function or Method</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self = [super init];
-	if (!self) {
-	  return nil;
-	}
-	
-	&lt;#initializations#&gt;
-	
-	return self;</string>
+	<string>NSLocalizedString(@"&lt;#Message#&gt;", &lt;#Comment#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6C5A314A-6FF4-4070-93A4-F3DF2226A7FE</string>
+	<string>FA2989D5-75D3-4B39-85D8-BF1459188E58</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Designated incantation for your designated initializers</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>init</string>
+	<string>NSLocalizedString</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

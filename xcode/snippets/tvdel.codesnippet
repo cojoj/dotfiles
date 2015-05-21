@@ -3,30 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>async</string>
+	<string>tvdel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_global_queue(&lt;#dispatch_queue_priority_t priority#&gt;, &lt;#unsigned long flags#&gt;), ^(void) {
-	    &lt;#code#&gt;
-	
-	    dispatch_async(dispatch_get_main_queue(), ^(void) {
-	        &lt;#code#&gt;
-	    });
-	});</string>
+	<string>#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    &lt;#statements#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>461332BF-D83F-45A9-A7D6-EBF6BB2D13CC</string>
+	<string>06B25C88-111E-4B06-8A99-B33A9084FF47</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Dispatch to do work in the background, and then to the main queue with the results</string>
+	<string>Placeholders for required UITableViewDelegate protocol methods</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch_async Pattern for Background Processing</string>
+	<string>UITableViewDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

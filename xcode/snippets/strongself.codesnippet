@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>documents</string>
+	<string>strongself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Function or Method</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSURL *documentsDirectoryURL = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];</string>
+	<string>__strong __typeof(&lt;#weakSelf#&gt;)strongSelf = &lt;#weakSelf#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E1576BE3-8A2E-4ED7-850D-611052150B6C</string>
+	<string>EF4180D1-9AEE-4DFC-9211-530BD1DA5B30</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>Declare strong reference to weak reference</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Documents Directory Path</string>
+	<string>__strong self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

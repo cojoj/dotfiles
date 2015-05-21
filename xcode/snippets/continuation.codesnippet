@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xan</string>
+	<string>continuation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Function or Method</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>XCTAssertNil(&lt;#expression#&gt;, &lt;#message#&gt;);</string>
+	<string>@interface &lt;#Class Name#&gt; ()
+&lt;#Continuation#&gt;
+@end</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>15C450E9-6762-41B0-879D-2DAC4BA39F73</string>
+	<string>25B856B5-5F20-4E35-8AC1-A17163CB1181</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert for XCTest</string>
+	<string>Anonymous category to define private methods in an implementation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>XCT Assert Nil</string>
+	<string>Class Continuation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>continuation</string>
+	<string>init</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Top Level</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#Class Name#&gt; ()
-	&lt;#Continuation#&gt;
-	@end</string>
+	<string>self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    &lt;#initializations#&gt;
+    
+    return self;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5E818EC9-AF5C-4385-A3A3-150F71E90A9E</string>
+	<string>7263F26D-0574-49C9-92A8-592D41C1A60A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Anonymous category to define private methods in an implementation</string>
+	<string>Designated incantation for your designated initializers</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class Continuation</string>
+	<string>init</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

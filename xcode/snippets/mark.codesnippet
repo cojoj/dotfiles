@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>stack</string>
+	<string>mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Function or Method</string>
+		<string>ClassInterfaceMethods</string>
+		<string>ClassImplementation</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@&quot;Call Stack: %@&quot;, [NSThread callStackSymbols]);</string>
+	<string>#pragma mark - &lt;#Section#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>25FE0C2A-3226-42C6-B5BE-80A574A0AF14</string>
+	<string>DEE765F0-D4CD-40D4-8E20-44B39165886D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>Dividers and labels to organize your code into sections</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Log Stack Trace</string>
+	<string>#pragma Mark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
