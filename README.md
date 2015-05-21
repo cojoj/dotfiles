@@ -130,35 +130,34 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 
 Here's the list of **Xcode plugins** which you use:
 
-- AdjustFontSize
-- Alcatraz
-- Auto-Importer
-- Backlight
-- ClangFormat
-- DBSmartPanels
-- DerivedData Exterminator
-- FuzzyAutocomplete
-- GitDiff
-- HOStringSense
-- IntelliPaste Tes
-- IntelliPaste
-- KSImageNamed
-- MarvinPlugin
-- NCSimulatorPlugin
-- OMColorSense
-- OMQuickHelp
-- OpenInTerminal
-- QuickLocalization
-- RealmPlugin
-- SCXcodeSwitchExpander
-- UncrustifyPlugin
-- VVDocumenter-Xcode
-- XCActionBar
-- XLCXcodeAssist
-- XcodeBoost
-- XcodeWay
-- Xcode_beginning_of_line
-- Xcode_copy_line
+- AdjustFontSize.xcplugin
+- Alcatraz.xcplugin
+- Auto-Importer.xcplugin
+- Backlight.xcplugin
+- ClangFormat.xcplugin
+- DBSmartPanels.xcplugin
+- DerivedData Exterminator.xcplugin
+- FuzzyAutocomplete.xcplugin
+- GitDiff.xcplugin
+- HOStringSense.xcplugin
+- IntelliPaste.xcplugin
+- KSImageNamed.xcplugin
+- MarvinPlugin.xcplugin
+- NCSimulatorPlugin.xcplugin
+- OMColorSense.xcplugin
+- OMQuickHelp.xcplugin
+- Open With Application.xcplugin
+- PrettyPrintJSON.xcplugin
+- QuickLocalization.xcplugin
+- RealmPlugin.xcplugin
+- SuggestedColors.xcplugin
+- Tuna.xcplugin
+- VVDocumenter-Xcode.xcplugin
+- XCActionBar.xcplugin
+- XcodeBoost.xcplugin
+- XcodeColors.xcplugin
+- XcodeWay.xcplugin
+- Xcode_beginning_of_line.xcplugin
 
 If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02)
 
