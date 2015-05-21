@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>nscoding</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Class Implementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - NSCoding
+	
+	- (instancetype)initWithCoder:(NSCoder *)decoder {
+	    self = [super init];
+	    if (!self) {
+	      return nil;
+	    }
+	
+	    &lt;# implementation #&gt;
+	
+	    return self;
+	}
+	
+	- (void)encodeWithCoder:(NSCoder *)coder {
+	  &lt;# implementation #&gt;
+	}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>54EE5D11-E587-4BD0-BFC3-63DB9ABD24EE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Placeholders for NSCoding protocol methods</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSCoding Protocol Methods</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
