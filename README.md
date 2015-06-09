@@ -177,8 +177,6 @@ I've copied those repos and put them under `xcode/snippets`. To use all of those
 cp ~/.dotfiles/xcode/snippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/
 ```
 
-=======
->>>>>>> Stashed changes
 ## Dock
 
 Please see the screenshot below for the default **Dock** icons positioning. Feel free to do it whatever you like your icons grouped.
