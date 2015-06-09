@@ -133,7 +133,6 @@ Here's the list of **Xcode plugins** which you use:
 - AdjustFontSize
 - Alcatraz
 - Auto-Importer
-- Backlight
 - ClangFormat
 - DBSmartPanels
 - DerivedData Exterminator
@@ -142,14 +141,14 @@ Here's the list of **Xcode plugins** which you use:
 - HOStringSense
 - IntelliPaste
 - KSImageNamed
-- MarvinPlugin
-- NCSimulatorPlugin
+- Lin
 - OMColorSense
 - OMQuickHelp
 - Open With Application
 - PrettyPrintJSON
 - QuickLocalization
 - RealmPlugin
+<<<<<<< Updated upstream
 - SuggestedColors
 - Tuna
 - VVDocumenter-Xcode
@@ -157,6 +156,12 @@ Here's the list of **Xcode plugins** which you use:
 - XcodeBoost
 - XcodeColors
 - XcodeWay
+=======
+- SCXcodeSwitchExpander
+- VVDocumenter-Xcode
+- XCActionBar
+- XcodeBoost
+>>>>>>> Stashed changes
 - Xcode_beginning_of_line
 
 If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02)
@@ -169,6 +174,7 @@ Beside installing plugins you'll have to install defult **theme** and set some *
     + Show **Line Numbers**
     + Page guide at column
 
+<<<<<<< Updated upstream
 Now let's move to configuring **Plugins**:
 
 - **Backlight**:
@@ -190,6 +196,8 @@ I've copied those repos and put them under `xcode/snippets`. To use all of those
 cp ~/.dotfiles/xcode/snippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/
 ```
 
+=======
+>>>>>>> Stashed changes
 ## Dock
 
 Please see the screenshot below for the default **Dock** icons positioning. Feel free to do it whatever you like your icons grouped.
