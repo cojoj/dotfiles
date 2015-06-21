@@ -13,7 +13,7 @@ git config --global user.email $EMAIL
 git config --global credential.helper osxkeychain
 
 # Global gitignore file
-git config --global core.excludesfile ".gitignore_global"
+git config --global core.excludesfile .gitignore_global
 ln -sfhv $GIT_DIRECTORY/.gitignore_global $HOME
 
 # Genearte SSH key
