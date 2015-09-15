@@ -1,6 +1,7 @@
 {
     "caret_style": "phase",
     "auto_complete_delay": 5,
+    "hot_exit": false,
     "remember_open_files": false,
     "open_files_in_new_window": false,
     "bold_folder_labels": true,

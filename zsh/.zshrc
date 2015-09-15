@@ -31,4 +31,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Set Sublime Text as defulat editor for ZSH
 export EDITOR='subl'
 
+# Load environmental variables with credentials
+source $HOME/.credentials
+
 source $ZSH/oh-my-zsh.sh

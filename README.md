@@ -25,6 +25,27 @@ xcode-select --install
 
 > To check if **Command Line Tools** were successfully installed on your machine you can simply type `gcc` in terminal and you should see some something useful like `clang: error: no input files`. 
 
+**Note**:
+Soluton described above is _okay_, but you can use something better for installing Xcode and Command Line Tools.
+You have to check a great tool called [`xcode-install`](https://github.com/neonichu/xcode-install). So, let's just jump into this:
+```
+sudo gem install xcode-install
+```
+If everything went smooth we can get into setting our environmental variables with Apple Developer account credentials, so the script can fetch info about Xcodes and download them.
+```
+export XCODE_INSTALL_USER="yourUserName"
+export XCODE_INSTALL_PASSWORD="yourPassword"
+```
+After this you can get a list of available Xcodes by calling:
+```
+xcode-install list
+```
+And if you want to install Xcode, simply call
+```
+xcode-install install "version here e.g. 7.0 GM seed"
+```
+It'll take a looooooong, long time and ask you for password **twice**, so be patient because it's worth the hustle! 🔫
+
 ## 3. Install dotfiles
 
 To install **dotfiles** and it's dependencies go to `$HOME` directory and run:
@@ -78,44 +99,30 @@ First of all let's start with linking cool `subl` shell alias so we can easily m
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
-If you're not me (:stuck_out_tongue_winking_eye:) and you can't link (or don't want to) plugins. You can rely on `.dotfiles`. They'll ask you if you will do it manually or you want to download current version from Dropbox and simply move them to Sublime Text directory.
+With this you should be ready to go with **Sublime Text 3**. First, install **Package Control** to be able to use awesome third party plugins:
 
-If you only want to get the preferences file. You can find it in `sublime/Preferences.sublime-settings`. Just copy it to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`.
-
-Default configuration files are stored on [Dropbox](https://www.dropbox.com/sh/j4e32n62temz336/AACQH1Ufh9nN2hTPp_4WaBB1a?dl=0). To set everything just link provided files to proper directory on machine by:
-```
-ln -sfhv ~/Dropbox/Sublime/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 3/
-ln -sfhv ~/Dropbox/Sublime/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/
-```
-
-With this you should be ready to go with **Sublime Text 3**. If anything went wrong here's the **list of packages** but first install **Package Control**:
-
-- access console by `ctrl+` ` or do it like human bing via _View_ :arrow_right: _Show Console_
+- access console by `ctrl+` ` or do it like human bing via _View_ :arrow_right: _Show Console_ 😁
 - paste this snippet into console:  
-    ```
-    import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-    ```
+```
+import urllib.request,os,hashlib; h = '462d6673ebd5b9ca297474c166b2e10d' + 'fd945a23b1a0642535aa906951315f52'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+```
 
 List of installed packages (_might be outdated_):
 
 - BracketHighlighter
 - DashDoc
 - Emmet
+- Emoji 💕
 - Git
 - Markdown Preview
 - MarkdownEditing
-- MarkdownTOC
 - Marked App Menu
-- Monokai Extended
-- Package Control
 - Pretty JSON
 - RSpec
 - SideBarEnhancements
-- sublimelint
 - SublimeLinter-annotations
 - SublimeLinter-json
 - SublimeLinter-ruby
-- SummitLinter
 - Swift
 - Tomorrow Color Schemes
 
