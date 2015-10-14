@@ -1,6 +1,12 @@
+# Add caskroom repo
+tap 'karan/karan'
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+
+# brews
 brew "caskroom/cask/brew-cask"
 brew "git"
-brew "node"
+brew "gitignore"
 brew "openssl"
 brew "ruby"
 brew "xctool"
@@ -9,7 +15,3 @@ brew "tree"
 brew "wget"
 brew "zsh"
 brew "zsh-completions"
-
-# Add caskroom repo
-tap 'caskroom/cask'
-tap 'caskroom/versions'
