@@ -13,8 +13,8 @@ git config --global user.email $EMAIL
 git config --global credential.helper osxkeychain
 
 # Global gitignore file
-git config --global core.excludesfile .gitignore_global
 ln -sfhv $GIT_DIRECTORY/.gitignore_global $HOME
+git config --global core.excludesfile .gitignore_global
 
 # Genearte SSH key
 if [ $(find $SSH_DIRECTORY -maxdepth 0 -type d -empty 2>/dev/null) ]; then
