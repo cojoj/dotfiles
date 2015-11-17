@@ -141,11 +141,10 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/
 Here's the list of **Xcode plugins** which you use:
 
 - AdjustFontSize
-- Alcatraz
-- Auto-Importer
 - ClangFormat
 - DBSmartPanels
 - DerivedData Exterminator
+- FixCode
 - FuzzyAutocomplete
 - GitDiff
 - HOStringSense
@@ -154,20 +153,21 @@ Here's the list of **Xcode plugins** which you use:
 - Lin
 - OMColorSense
 - OMQuickHelp
-- Open With Application
-- OpenInTerminal
+- OpenWithApplication
 - PrettyPrintJSON
-- QuickLocalization
 - RealmPlugin
 - SCXcodeSwitchExpander
 - SwiftCodeSnippets
-- Tuna
 - VVDocumenter-Xcode
-- XCActionBar
-- XcodeBoost
 - Xcode_beginning_of_line
+- XcodeBoost
+- XcodeWay
 
-If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02)
+If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02).
+Simplest way to do this is byt typing:
+```
+curl -fsSL https://gist.githubusercontent.com/cojoj/b70e2ff44f26677caa02/raw/3ff466263de923d3574a2326896675932b222467/update_xcode_plugins | sh   
+```
 
 Beside installing plugins you'll have to install defult **theme** and set some **properties** manually. Follow the steps listed below:
 
@@ -176,6 +176,8 @@ Beside installing plugins you'll have to install defult **theme** and set some *
 - **Text Editing**:
     + Show **Line Numbers**
     + Page guide at column
+- **Source Control**:
+    + Refrsh server status automatically
 
 You're almost ready... One last thing - **code snippets**. There're two reasonable repos offering nice set of snippets:
 
