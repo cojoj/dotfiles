@@ -7,7 +7,6 @@ tap 'caskroom/versions'
 brew "caskroom/cask/brew-cask"
 brew "git"
 brew "gitignore"
-brew "openssl"
 brew "ruby"
 brew "xctool"
 brew "the_silver_searcher"

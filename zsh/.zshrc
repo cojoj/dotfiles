@@ -19,7 +19,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git z brew brew-cask bundler compleat forklift gem git-extras github osx pod rails ruby sublime zsh-syntax-highlighting node npm)
+plugins=(git z brew brew-cask bundler compleat forklift gem git-extras github osx pod rails ruby sublime zsh-syntax-highlighting)
 
 # User configuration
 
@@ -32,6 +32,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR='subl'
 
 # Load environmental variables with credentials
-source $HOME/.credentials
+# source $HOME/.credentials
 
 source $ZSH/oh-my-zsh.sh

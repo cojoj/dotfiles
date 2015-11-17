@@ -26,25 +26,21 @@ xcode-select --install
 > To check if **Command Line Tools** were successfully installed on your machine you can simply type `gcc` in terminal and you should see some something useful like `clang: error: no input files`. 
 
 **Note**:
-Soluton described above is _okay_, but you can use something better for installing Xcode and Command Line Tools.
+Solution described above is _okay_, but you can use something better for installing Xcode and Command Line Tools.
 You have to check a great tool called [`xcode-install`](https://github.com/neonichu/xcode-install). So, let's just jump into this:
 ```
 sudo gem install xcode-install
 ```
-If everything went smooth we can get into setting our environmental variables with Apple Developer account credentials, so the script can fetch info about Xcodes and download them.
-```
-export XCODE_INSTALL_USER="yourUserName"
-export XCODE_INSTALL_PASSWORD="yourPassword"
-```
 After this you can get a list of available Xcodes by calling:
 ```
-xcode-install list
+xcversion list
 ```
 And if you want to install Xcode, simply call
 ```
-xcode-install install "version here e.g. 7.0 GM seed"
+xcversion install "version here e.g. 7.0 GM seed"
 ```
 It'll take a looooooong, long time and ask you for password **twice**, so be patient because it's worth the hustle! 🔫
+You can also use this CLI tool to install Command Line Tools itself or Simulators.
 
 ## 3. Install dotfiles
 
@@ -101,7 +97,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 With this you should be ready to go with **Sublime Text 3**. First, install **Package Control** to be able to use awesome third party plugins:
 
-- access console by `ctrl+` ` or do it like human bing via _View_ :arrow_right: _Show Console_ 😁
+- access console by _View_ :arrow_right: _Show Console_ 😁
 - paste this snippet into console:  
 ```
 import urllib.request,os,hashlib; h = '462d6673ebd5b9ca297474c166b2e10d' + 'fd945a23b1a0642535aa906951315f52'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
@@ -109,22 +105,29 @@ import urllib.request,os,hashlib; h = '462d6673ebd5b9ca297474c166b2e10d' + 'fd94
 
 List of installed packages (_might be outdated_):
 
+- API Blueprint
 - BracketHighlighter
 - DashDoc
 - Emmet
-- Emoji 💕
+- Emoji
 - Git
+- Github Tools
+- Markdown Extended
 - Markdown Preview
 - MarkdownEditing
 - Marked App Menu
+- Objective-C Autocompletion
+- Package Control
 - Pretty JSON
+- Pretty Ruby
 - RSpec
 - SideBarEnhancements
+- sublimelint
 - SublimeLinter-annotations
 - SublimeLinter-json
 - SublimeLinter-ruby
 - Swift
-- Tomorrow Color Schemes
+- Tomorrow Color Scheme
 
 Theme is set to [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Menlo 12pt**.
 
