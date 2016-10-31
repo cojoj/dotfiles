@@ -23,7 +23,7 @@ To be able do do anything _programming-related_ you'll have to install **Xcode**
 xcode-select --install
 ```
 
-> To check if **Command Line Tools** were successfully installed on your machine you can simply type `gcc` in terminal and you should see some something useful like `clang: error: no input files`. 
+> To check if **Command Line Tools** were successfully installed on your machine you can simply type `gcc` in terminal and you should see some something useful like `clang: error: no input files`.
 
 **Note**:
 Solution described above is _okay_, but you can use something better for installing Xcode and Command Line Tools.
@@ -88,48 +88,15 @@ What's more, to complete setting up open **Terminal.app** preferences and there'
         * Bell:
             - Visual signal only
 
-## Sublime Text configuration
+## Atom configuration
 
-First of all let's start with linking cool `subl` shell alias so we can easily manipulate everything from Terminal.app:
+Right now I use (Atom)[http://atom.io], so it's fairly simple to set it up as it works pretty nice from the beginning.
+One thing that you need to do is install third party plugins.
+
+To install them you have to call following command:
 ```
-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+apm install --packages-file atom/packages
 ```
-
-With this you should be ready to go with **Sublime Text 3**. First, install **Package Control** to be able to use awesome third party plugins:
-
-- access console by _View_ :arrow_right: _Show Console_ 😁
-- paste this snippet into console:  
-```
-import urllib.request,os,hashlib; h = '462d6673ebd5b9ca297474c166b2e10d' + 'fd945a23b1a0642535aa906951315f52'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-```
-
-List of installed packages (_might be outdated_):
-
-- API Blueprint
-- BracketHighlighter
-- DashDoc
-- Emmet
-- Emoji
-- Git
-- Github Tools
-- Markdown Extended
-- Markdown Preview
-- MarkdownEditing
-- Marked App Menu
-- Objective-C Autocompletion
-- Package Control
-- Pretty JSON
-- Pretty Ruby
-- RSpec
-- SideBarEnhancements
-- sublimelint
-- SublimeLinter-annotations
-- SublimeLinter-json
-- SublimeLinter-ruby
-- Swift
-- Tomorrow Color Scheme
-
-Theme is set to [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Menlo 12pt**.
 
 ## Xcode configuration
 
