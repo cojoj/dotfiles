@@ -100,61 +100,16 @@ apm install --packages-file atom/packages
 
 ## Xcode configuration
 
-First of all install [Alcatraz](http://alcatraz.io) using:
-```
-curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
-```
-
-Here's the list of **Xcode plugins** which you use:
-
-- AdjustFontSize
-- ClangFormat
-- DBSmartPanels
-- DerivedData Exterminator
-- FixCode
-- FuzzyAutocomplete
-- GitDiff
-- HOStringSense
-- IntelliPaste
-- KSImageNamed
-- Lin
-- OMColorSense
-- OMQuickHelp
-- OpenWithApplication
-- PrettyPrintJSON
-- RealmPlugin
-- SCXcodeSwitchExpander
-- SwiftCodeSnippets
-- VVDocumenter-Xcode
-- Xcode_beginning_of_line
-- XcodeBoost
-- XcodeWay
-
-If some plugins doesn't work it's probably because of new Xcode version and you need to update **UUID**. You can simply do it by running script in this [Gist](https://gist.github.com/b70e2ff44f26677caa02).
-Simplest way to do this is byt typing:
-```
-curl -fsSL https://gist.githubusercontent.com/cojoj/b70e2ff44f26677caa02/raw/3ff466263de923d3574a2326896675932b222467/update_xcode_plugins | sh   
-```
-
-Beside installing plugins you'll have to install defult **theme** and set some **properties** manually. Follow the steps listed below:
+You'll have to install default **theme** and set some **properties** manually. Follow the steps listed below:
 
 - **Fonts and Colors**:
-    + `Tomorrow Night` theme can be installed via **Alcatraz**
+    + `Tomorrow Night`
+    + Font to Fira Code, 12
 - **Text Editing**:
     + Show **Line Numbers**
     + Page guide at column
 - **Source Control**:
-    + Refrsh server status automatically
-
-You're almost ready... One last thing - **code snippets**. There're two reasonable repos offering nice set of snippets:
-
-1. [Mattt's Objective-C snippets](https://github.com/Xcode-Snippets/Objective-C)
-2. [Swift snippets from Kamil Burczyk](https://github.com/burczyk/XcodeSwiftSnippets)
-
-I've copied those repos and put them under `xcode/snippets`. To use all of those just call:
-```
-cp ~/.dotfiles/xcode/snippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/
-```
+    + Refresh server status automatically
 
 ## Dock
 
