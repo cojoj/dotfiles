@@ -1,0 +1,15 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 12
+    tabLength: 4
+  "exception-reporting":
+    userId: "676cd1b0-435e-ae50-091a-61a44292fe5f"
+  welcome:
+    showOnStartup: false
