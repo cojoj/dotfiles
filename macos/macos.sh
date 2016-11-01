@@ -248,6 +248,12 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Turn on maginification
+defaults write com.apple.dock magnification -boolean true
+
+# Set magnification scale to default 128
+defaults write com.apple.dock largesize -float 128.000000
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
