@@ -88,6 +88,10 @@ To avoid some complication during the installation process you'll have to enable
 - Go to **Security...**.
 - Select **Allow software downloaded from unknown sources**.
 
+## Custom font
+
+I'm using [Fira Code](https://github.com/tonsky/FiraCode) font family for all my code-related things like editors, IDEs etc. Please follow installation guides in the repository of this Monospaced font.
+
 ## Terminal window configuration
 
 To have complete **Terminal.app** configuration you have to download custom theme and install it. I use [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Menlo 12pt**.
