@@ -63,6 +63,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+# Disable guest account
+defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool true
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
