@@ -94,7 +94,12 @@ I'm using [Fira Code](https://github.com/tonsky/FiraCode) font family for all my
 
 ## Terminal window configuration
 
-To have complete **Terminal.app** configuration you have to download custom theme and install it. I use [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Menlo 12pt**.
+To have complete **Terminal.app** configuration you have to download custom theme and install it. I use [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Fira Code 12pt**.
+
+Terminal app shows this stupid `Las Login` command. You can disable it by simply creating `.hushlogin` file in home directory:
+```
+touch ~/.hushlogin
+```
 
 What's more, to complete setting up open **Terminal.app** preferences and there's a couple of things to set...
 
@@ -103,7 +108,8 @@ What's more, to complete setting up open **Terminal.app** preferences and there'
 - **Profiles** tab:
     + Set Tomorrow Night as default (at the bottom of table view)
     + Text:
-        + Font is **Menlo Regular 12pt**
+        + **Background** - 90% opacity and 30% blur
+        + Font is **Fira Code 12pt**
         + **Text** - everything selected here
         + **Cursor**:
             * Square
@@ -111,7 +117,6 @@ What's more, to complete setting up open **Terminal.app** preferences and there'
             * **30%** opacity
     + Window:
         * **Active process**
-        * **Background** - 90% opacity and 30% blur
     + Advanced:
         * Bell:
             - Visual signal only
