@@ -1,6 +1,6 @@
-# OS X Setup guide
+# macOS Setup guide
 
-## 1. Update **App Store** software
+## Update **App Store** software
 
 Make sure that everything on the Mac is up to date either by opening **App Store** and going to **Update** tab or by running software update from terminal using this command:
 ```
@@ -12,7 +12,7 @@ If there's something to update you'll have to run this command to update it:
 sudo softwareupdate -iva
 ```
 
-## 2. Install Xcode and Command Line Tools
+## Install Xcode and Command Line Tools
 
 To be able do do anything _programming-related_ you'll have to install **Xcode** and **Command Line Tools**. To do it follow the steps below:
 
@@ -42,7 +42,7 @@ xcversion install "version here e.g. 7.0 GM seed"
 It'll take a looooooong, long time and ask you for password **twice**, so be patient because it's worth the hustle! 🔫
 You can also use this CLI tool to install Command Line Tools itself or Simulators.
 
-## 3. Install dotfiles
+## Install dotfiles
 
 To install **dotfiles** and it's dependencies go to `$HOME` directory and run:
 ```
@@ -56,7 +56,26 @@ source bootstrap.sh
 
 Of course you can easily use each file without calling `bootstrap.sh`.
 
-## 4. Allow third-party software
+## Computer names
+
+There are 3 _names_ of the computer which you probably would like to set:
+
++ **`ComputerName`** is the so-called _user-friendly_ name for the Mac, it’s what will show up on the Mac itself and what will be visible to others when connecting to it over a local network. This is also what’s visible under the Sharing preference panel.
+    ```
+    scutil --set ComputerName "MacBook Willy"
+    ```
+
++ **`HostName`** is the name assigned to the computer as visible from the command line, and it’s also used by local and remote networks when connecting through SSH and Remote Login.
+    ```
+    scutil --set HostName "centauri"
+    ```
+
++ **`LocalHostName`** is the name identifier used by Bonjour and visible through file sharing services like AirDrop.
+    ```
+    scutil --set LocalHostName "MacBookPro"
+    ```
+
+## Allow third-party software
 
 Since macOS is more and more about preventing users from messing around with software, Gatekeeper is enabled by default in Sierra, and since I use a lot of third party software I have to disabl Gatekeeper by running this command:
 ```
@@ -69,7 +88,7 @@ To avoid some complication during the installation process you'll have to enable
 - Go to **Security...**.
 - Select **Allow software downloaded from unknown sources**.
 
-## 5. Terminal window configuration
+## Terminal window configuration
 
 To have complete **Terminal.app** configuration you have to download custom theme and install it. I use [Tomorrow Night](https://github.com/ChrisKempson/Tomorrow-Theme) with **Menlo 12pt**.
 
