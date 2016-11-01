@@ -14,26 +14,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-echo -e "Do you wish to set computer names? [Y/N] "
-read COMPUTER_NAME
-if [[ $COMPUTER_NAME =~ ^[Yy]$ ]]; then
-	#  Set ComputerName
-   	echo -e "Please, enter your ComputerName: "
-	read COMPUTER_NAME
-	sudo scutil --set ComputerName $COMPUTER_NAME
-
-	# Set HostName
-	echo -e "Please, enter your HostName: "
-	read HOST_NAME
-	sudo scutil --set HostName $HOST_NAME
-
-	# Set LocalHostName
-	echo -e "Please, enter your LocalHostName: "
-	read LOCAL_HOST_NAME
-	sudo scutil --set LocalHostName $LOCAL_HOST_NAME
-fi
-
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
