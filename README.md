@@ -58,6 +58,11 @@ Of course you can easily use each file without calling `bootstrap.sh`.
 
 ## 4. Allow third-party software
 
+Since macOS is more and more about preventing users from messing around with software, Gatekeeper is enabled by default in Sierra, and since I use a lot of third party software I have to disabl Gatekeeper by running this command:
+```
+sudo spctl --master-disable
+```
+
 To avoid some complication during the installation process you'll have to enable installation of third party software. To do this follow bullet points:
 
 - Go to **Preferences**.
