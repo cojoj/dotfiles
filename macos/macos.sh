@@ -20,7 +20,7 @@ read COMPUTER_NAME
 if [[ $COMPUTER_NAME =~ ^[Yy]$ ]]
 then
 	#  Set ComputerName
-    echo -e "Please, enter your ComputerName: "
+   	echo -e "Please, enter your ComputerName: "
 	read COMPUTER_NAME
 	sudo scutil --set ComputerName $COMPUTER_NAME
 
