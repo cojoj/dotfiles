@@ -1,5 +1,6 @@
 # brews
 brew "fish"
+brew "mas"
 brew "git"
 brew "ruby"
 brew "xctool"
